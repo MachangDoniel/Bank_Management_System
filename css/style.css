@@ -1,0 +1,31 @@
+.nav-item a {
+    position: relative;
+}
+
+.nav-item a::before,
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -3px;
+    background-color: transparent;
+    transition: width 0.5s ease-in-out;
+}
+
+.nav-item a::before {
+    left: 0;
+}
+
+.nav-item a::after {
+    right: 0;
+}
+
+.nav-item a:hover::before,
+.nav-item a:hover::after {
+    width: 100%;
+    background-color: rgb(227, 238, 155);
+}
+.white_background{
+    background-color: black;
+}
